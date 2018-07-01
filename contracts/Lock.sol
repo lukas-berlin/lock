@@ -11,7 +11,7 @@ contract Lock {
     mapping (address => User) public balances;
     address public donationAddress;
 
-    function constructor public {
+    constructor public {
         balances[msg.sender].value = 0;
     }
 
