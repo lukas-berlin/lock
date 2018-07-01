@@ -1,4 +1,4 @@
-pragma solidity ^0.4.10;
+pragma solidity ^0.4.21;
 
 
 contract Lock {
@@ -11,7 +11,7 @@ contract Lock {
     mapping (address => User) public balances;
     address public donationAddress;
 
-    function Lock() public {
+    function constructor public {
         balances[msg.sender].value = 0;
     }
 
